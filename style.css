@@ -1,0 +1,257 @@
+:root {
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --dark-color-base: rgb(85, 85, 85);
+
+    --typography-primary: 'Montserrat', sans-serif;
+    /* --typography-secondary: 'Raleway', sans-serif; */
+    --typography-secondary: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-color-base);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: var(--typography-primary);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.8;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.6;
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    height: 1.4;
+}
+
+.l-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+.l-full-content {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+
+
+/* ===== HEADER-MENU ===== */
+
+.logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+.header {
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-color);
+    background-color: var(--dark-color);
+    padding: 0 5rem;
+    /* border-bottom: 2px solid var(--dark-color-base); */
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.menu__link {
+    display: block;
+    padding: 0.5rem;
+    color: var(--light-color);
+    font-size: .86rem;
+    font-weight: 300;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+/* ===== HEADER-MENU ===== */
+
+
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    /* background-image: url(/assets/4.jpg); */
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    /* background-color: rgba(0, 0, 0, .25); */
+    border-bottom: 1px solid var(--dark-color-base);
+    background-blend-mode: multiply;
+}
+
+.hero__home {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: var(--typography-secondary);
+}
+
+.hero__home::before {
+    content: "";
+    display: block;
+    height: 80px;
+    width: 1px;
+    margin: 1rem auto;
+    background-color: var(--dark-color);
+}
+
+.hero__title {
+    font-size: 6rem;
+    /* color: transparent;
+    -webkit-text-stroke: 2px var(--dark-color-base); */
+    font-weight: 900;
+    line-height: 1;
+}
+
+.hero__title::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: var(--dark-color);
+    margin: 10px auto;
+}
+
+.hero__down {
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: .88rem;
+    font-family: var(--typography-secondary);
+}
+
+/* ===== HERO ===== */
+
+/* ===== GRID-1 ===== */
+.grid__header {
+    border-bottom: 2px solid var(--dark-color-base);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.grid__header-title {
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 330px 1fr 330px;
+    gap: 20px;
+}
+
+.grid__box {
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+
+.grid__box-children {
+    height: 320px;
+    margin-bottom: 20px;
+}
+
+.grid__box-description {
+    padding: .8rem;
+    border: 1px solid #999;
+}
+
+.grid__box-img {
+    width: 100%;
+    height: 80%;
+}
+
+.grid__box-text {
+    margin: 0;
+    font-size: .86rem;
+    font-family: var(--typography-secondary);
+}
+.grid__box--title {
+    font-weight: 600;
+}
+
+
+.grid__box-center {
+    height: 95%;
+}
+
+.grid__box-picture {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== GRID-1 ===== */
