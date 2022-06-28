@@ -184,8 +184,6 @@ p {
 
 .hero__title {
     font-size: 6rem;
-    /* color: transparent;
-    -webkit-text-stroke: 2px var(--dark-color-base); */
     font-weight: 900;
     line-height: 1;
 }
@@ -255,7 +253,6 @@ p {
 .b1-image:hover .b1__img {
     transform: scale(1.2);
     opacity: 1;
-    filter: saturate(1.5);
 }
 .b1-footer {
     padding: 1.5rem 1rem;
