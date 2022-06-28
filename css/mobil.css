@@ -1,5 +1,10 @@
 @media screen and (max-width:768px) {
-
+    .cta-black {
+        padding: 10px 1rem;
+    }
+    .cta-black--large {
+        padding: 1rem 2rem;
+    }
     /* ====== MENU ====== */
     .header {
         padding: 0 0 0 1rem;
@@ -84,7 +89,9 @@
 
     /* ====== HERO ====== */
     .hero {
-        background-position: left;
+        background-position: center;
+        background-attachment: initial;
+        background-color: rgba(0, 0, 0, .05);
     }
     .hero__title {
         font-size: 3.5rem;
@@ -112,18 +119,48 @@
         height: 50px;
     }
 
+
+
+
     /* ====== HERO ====== */
 
-
-    .grid-container {
-        grid-template-columns: 1fr;
+    .b1-container {
+        gap: 1rem 1rem;
     }
-    .grid__header-title {
-        font-weight: 500;
-        padding-bottom: 1rem;
-        font-size: 1rem;
-        padding: .5rem 1rem;
+    .b1 {
+        width: 100%;
     }
     
+    .b1__box {
+        width: 90%;
+    }
+    
+    
+    .b1-image {
+        height: 260px;
+    }
+    
+    .b1__title {
+        font-weight: 500;
+    }
+    .b1__date {
+        font-weight: 500;
+        font-family: var(--typography-secondary);
+        font-size: .8rem;
+    }
 
+
+
+
+    
+
+
+
+
+    .footer__text {
+        font-size: .85rem;
+    }
 }
+
+
+
