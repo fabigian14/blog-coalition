@@ -126,7 +126,6 @@ p {
     background-color: var(--light-color);
     background-color: var(--dark-color);
     padding: 0 5rem;
-    /* border-bottom: 2px solid var(--dark-color-base); */
 }
 
 .menu {
@@ -252,7 +251,6 @@ p {
 }
 .b1-image:hover .b1__img {
     transform: scale(1.2);
-    opacity: 1;
 }
 .b1-footer {
     padding: 1.5rem 1rem;
@@ -265,7 +263,7 @@ p {
     font-weight: 500;
     font-family: var(--typography-secondary);
     font-size: .8rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--dark-color);
     padding-bottom: 3px;
 }
 
